@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import App from "../App";
 
 interface props {
-  children: ReactNode; //instead of    text : String we give children : ReactNode for <span> component to be given....
+  children: ReactNode; //instead of text : String, we give children : ReactNode for <span> component to be given....
   onClose: () => void;
 }
 
