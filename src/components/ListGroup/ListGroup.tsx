@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Fragment } from "react";
+import styles from "./ListGroup.module.css";
 
 interface Props {
   items: string[];
@@ -14,7 +15,7 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
     <Fragment>
       <h1>{heading}</h1>
       {items.length === 0 && <p>No item found</p>}
-      <ul className="list-group">
+      <ul className={[styles.ListGroup, styles.container].join(" ")}>
         {items.map((item, index) => (
           <li
             className={
