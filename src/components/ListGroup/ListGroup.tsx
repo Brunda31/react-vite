@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Fragment } from "react";
 import styles from "./ListGroup.module.css";
 import styled from "styled-components";
+import { SlCalender } from "react-icons/sl";
 
 const ListItem = styled.ul`
   padding: 50;
@@ -49,6 +50,10 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
           </Li>
         ))}
       </ListItem>
+      <hr></hr>
+      <h4>This is a calender Icon using react-icons</h4>
+      <SlCalender color="blue" size="50"></SlCalender>
+      <hr></hr>
     </Fragment>
   );
 }
