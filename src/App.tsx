@@ -2,6 +2,9 @@ import { useState } from "react";
 import Buttons from "./components/buttons";
 import Alert from "./components/Alert";
 import ListGroup from "./components/ListGroup";
+import WelcomeTitle from "./components/UserInfo";
+import { SlCalender } from "react-icons/sl";
+import Like from "./components/Like";
 
 function App() {
   const [setalert, settingalert] = useState(false);
@@ -26,6 +29,10 @@ function App() {
       <Buttons color="secondary" onClick={() => settingalert(true)}>
         Alert Button
       </Buttons>
+
+      <WelcomeTitle></WelcomeTitle>
+
+      <Like onClick={() => console.log("Clicked!")}></Like>
     </div>
   );
 }
