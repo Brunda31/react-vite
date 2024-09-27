@@ -6,7 +6,7 @@ const Form = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isValid },
   } = useForm();
 
   return (
@@ -41,7 +41,7 @@ const Form = () => {
         {errors.age?.type === "required" && (
           <p className="text-danger">Age is a required field</p>
         )}
-        <button>SUBMIT</button>
+        <button disabled={!isValid}>SUBMIT</button>
       </div>
     </form>
   );
