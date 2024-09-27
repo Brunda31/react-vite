@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import App from "../App";
+import App from "./Form";
 import styled from "styled-components";
 
 interface props {
