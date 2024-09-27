@@ -1,0 +1,14 @@
+#name.form-control{
+    padding-right: 30px;
+    width: min-content;
+    margin-bottom: 30px;
+    background-color: beige;
+    border-radius: 500px;  
+}
+
+#age.form-control{
+    width: min-content;
+    background-color: beige;
+    border-radius: 500px; 
+    margin-bottom: 30px;
+}
